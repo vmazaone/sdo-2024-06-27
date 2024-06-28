@@ -11,4 +11,4 @@ jobs:
   deploy-to-prod:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/deploy-prod-action
+      - uses: actions/deploy-environment/deploy-prod-action
