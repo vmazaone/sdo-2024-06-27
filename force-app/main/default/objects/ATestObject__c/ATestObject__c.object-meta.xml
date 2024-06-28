@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject>
+    <pluralLabel>ATestObjects</pluralLabel>
+    <fullName>ATestObject__c</fullName>
+    <description>Test object for CI/CD demo</description>
+    <enableHistory>true</enableHistory>
+    <enableActivities>true</enableActivities>
+    <enableSearch>true</enableSearch>
+    <enableFeeds>true</enableFeeds>
+    <enableReports>true</enableReports>
+    <enableBulkApi>true</enableBulkApi>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <sharingModel>ReadWrite</sharingModel>
+    <nameField>
+        <type>Text</type>
+        <label>Name</label>
+    </nameField>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <label>ATestObject</label>
+</CustomObject>
