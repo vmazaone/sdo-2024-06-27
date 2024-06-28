@@ -1,0 +1,28 @@
+name: Deploy To Prod
+description: Deploys to Prod environment
+
+
+runs: 
+  using: "composite"
+  steps:
+    - name: Install sfdx
+      run: |
+        npm install --global sfdx-cli
+        sfdx --version
+    - name: Login to Prod
+      shell: bash
+      run: |
+        sfdx org login sfdx-url --set-default --sfdx-url-file ${{ secrets.SFDX_AUTH_URL }}
+    - name: Generate package.xml
+      shell: bash
+      run: |
+        sfdx project generate manifest --source-dir force-app --output-dir manifest       
+    - name: Deploy to Prod
+      shell: bash
+      run: |
+        deployFlags=(
+            --manifest manifest/package.xml
+            --wait 30
+            --verbose
+          )
+        sfdx project deploy start "${deployFlags[@]}"
