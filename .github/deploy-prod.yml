@@ -1,0 +1,14 @@
+name: Deploy To Prod
+
+on:
+    push:
+        branches:
+            - main
+        paths:
+            - 'force-app/**'
+
+jobs:
+  deploy-to-prod:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/deploy-prod-action
