@@ -6,6 +6,7 @@ runs:
   using: "composite"
   steps:
     - name: Install sfdx
+      shell: bash
       run: |
         npm install --global sfdx-cli
         sfdx --version
