@@ -30,5 +30,7 @@ jobs:
     #    sfdx project generate manifest --source-dir force-app --output-dir manifest       
     - name: Deploy to Prod
       shell: bash
+    #  run: |
+    #    sfdx project deploy start --manifest manifest/package.xml --wait 30 --verbose
       run: |
-        sfdx project deploy start --manifest manifest/package.xml --wait 30 --verbose
+        sfdx project deploy start --wait 30 --verbose
