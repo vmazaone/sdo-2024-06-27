@@ -5,7 +5,7 @@
         <name>CustomField</name>
     </types>
     <types>
-        <members>*/members>
+        <members>*</members>
         <name>CustomObject</name>
     </types>
     <version>61.0</version>
