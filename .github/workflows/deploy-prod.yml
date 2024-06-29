@@ -15,6 +15,8 @@ jobs:
      # - uses: actions/checkout@v4
      # - uses: ./.github/actions/
     steps:
+    - uses: actions/checkout@v4
+
     - name: Install sfdx
       shell: bash
       run: |
@@ -30,7 +32,6 @@ jobs:
     #    sfdx project generate manifest --source-dir force-app --output-dir manifest       
     - name: Deploy to Prod
       shell: bash
-    #  run: |
-    #    sfdx project deploy start --manifest manifest/package.xml --wait 30 --verbose
       run: |
-        sfdx project deploy start --wait 30 --verbose
+        sfdx project deploy start --manifest manifest/package.xml --wait 30 --verbose
+    
