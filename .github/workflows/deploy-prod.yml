@@ -31,9 +31,4 @@ jobs:
     - name: Deploy to Prod
       shell: bash
       run: |
-        deployFlags=(
-            --manifest manifest/package.xml
-            --wait 30
-            --verbose
-          )
-        sfdx project deploy start ${{ deployFlags[@]}}
+        sfdx project deploy start --manifest manifest/package.xml --wait 30 --verbose
