@@ -36,4 +36,4 @@ jobs:
             --wait 30
             --verbose
           )
-        sfdx project deploy start <(echo "${{ deployFlags[@]}}")
+        sfdx project deploy start ${{ deployFlags[@]}}
