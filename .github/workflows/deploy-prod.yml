@@ -10,11 +10,11 @@ on:
 jobs:
   deploy-to-prod:
     runs-on: ubuntu-latest
-    steps:
+    # steps:
     
      # - uses: actions/checkout@v4
      # - uses: ./.github/actions/
-     steps:
+    steps:
     - name: Install sfdx
       shell: bash
       run: |
