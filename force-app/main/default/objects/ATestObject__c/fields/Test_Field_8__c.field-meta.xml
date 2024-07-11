@@ -3,7 +3,7 @@
     <fullName>Test_Field_8__c</fullName>
     <externalId>false</externalId>
     <label>Test Field 8</label>
-    <precision>20</precision>
+    <precision>10</precision>
     <required>false</required>
     <scale>0</scale>
     <trackFeedHistory>false</trackFeedHistory>
