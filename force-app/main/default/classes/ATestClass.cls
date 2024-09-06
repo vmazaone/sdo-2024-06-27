@@ -1,5 +1,10 @@
 public with sharing class ATestClass {
-    public ATestClass() {
+    private string attributeOne;
+
+    public ATestClass() 
+    {
+        attributeOne = 'Default';
+
 
     }
 }
