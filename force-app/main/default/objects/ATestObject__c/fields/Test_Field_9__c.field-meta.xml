@@ -3,7 +3,7 @@
     <fullName>Test_Field_9__c</fullName>
     <externalId>false</externalId>
     <label>Test Field 9</label>
-    <length>65</length>
+    <length>66</length>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>
